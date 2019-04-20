@@ -1,17 +1,43 @@
 ﻿<!DOCTYPE html>
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"
+	integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
 <body>
+
+	<button id="buttonstartmusic"> se não tocar direto click aqui</button>
+	<audio src="/sound/fart-01.mp3" id="audio-caga" loop>
+		O seu navegador não suporta o elemento <code>audio</code>.
+	</audio>
 
 	<h1 style="text-align:center;">HUMOR! VAMO RIR, VAMO RIR, VAMO RIR!</h1>
 
-	<p style="text-align:center;">Olá, meu nome é Douglas, e eu comi BARRO quente.</p>
+	<p style="text-align:center;">Olá, meu nome é <span id="Texto" style="color:brown">Douglas</span>, e
+		eu comi <a style="color: brown; cursor: pointer" id="barro">BARRO</a> quente.</a>
 
-	<center>
-		<a href="https://www.udemy.com/user/pedrohqcoelho/" target="_blank">
-			<img src="imagens/douglas.jpg">
-		</a>
-	</center>
+		<center>
+			<a href="https://www.udemy.com/user/pedrohqcoelho/" target="_blank">
+				<img src="imagens/douglas.jpg" id="imagem-central" style="filter: grayscale(50%); filter: blur(100%)">
+			</a>
+		</center>
 
-<body>
+		<body>
+			<script>
+				$(document).ready(function () {
+					$('#buttonstartmusic').trigger("click");
+				})
+				$(buttonstartmusic).click(function () {
+					var audio = document.getElementById("audio-caga");
+					audio.play();
+				})
+				$(barro).click(function () {
+					var audio = document.getElementById("audio-caga");
+					audio.play();
+				}
+
+				)
+			</script>
+
+
 </html>
